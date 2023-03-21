@@ -28,7 +28,7 @@ module.exports = {
             "strict": false
         },
         "ja-no-mixed-period": {
-            "allowPeriodMarks": ["〜", "…", "："],
+            "allowPeriodMarks": ["〜", "…", ":"],
             "allowEmojiAtEnd": true
         },
         "unify-kuten-and-touten": {
@@ -59,12 +59,12 @@ module.exports = {
             "rulePaths": [__dirname + "/../dict/prh-dic.yml"]
         },
         "kmu-termcheck": {
-            "severity": "warning",
-            "awsDic": false,
-            "hatenaDic": false,
-            "googleDic": false,
-            "commonDic": false,
-            "userDic": [__dirname + "/../dict/term.txt"]
+            severity: "warning",
+            awsDic: false,
+            hatenaDic: false,
+            googleDic: false,
+            commonDic: false,
+            userDic: [__dirname + "/../dict/term.txt"]
         }
     }
 };
