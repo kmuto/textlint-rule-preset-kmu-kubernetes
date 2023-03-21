@@ -1,0 +1,132 @@
+version: 1
+rules:
+  - expected: いたし
+    pattern: 致し
+    prh: ひらがなにしたほうが読みやすい
+  - expected: いただ$1
+    pattern: /頂([かきくけこ])/
+    prh: ひらがなにしたほうが読みやすい。山頂の場合は「頂き」ママ
+  - expected: ご存じ
+    pattern: ご存知
+    prh: ひらがなにしたほうが読みやすい
+  - expected: さまざま
+    pattern: 様々
+    prh: ひらがなにしたほうが読みやすい
+  - expected: ときどき
+    pattern: 時々
+    prh: ひらがなにしたほうが読みやすい
+  - expected: すべて
+    pattern: 全て
+    prh: ひらがなにしたほうが読みやすい
+  - expected: まったく
+    pattern: 全く
+    prh: ひらがなにしたほうが読みやすい
+  - expected: わか$1
+    pattern: /分か([らりるれろ])/
+    prh: ひらがなにしたほうが読みやすい。分離の意の場合は漢字ママ
+  - expected: 沢山
+    pattern: たくさん
+    prh: ひらがなにしたほうが読みやすい
+  - expected: でき$1
+    pattern: /出来([なまるれ、])/
+    prh: ひらがなにしたほうが読みやすい
+  - expected: あわせ
+    pattern: 併せ
+    prh: ひらがなにしたほうが読みやすい
+  - expected: 稼働
+    pattern: 稼動
+    prh: 表記統一
+  - expected: 行$1
+    pattern: /行な([いうえおわ])/
+    prh: 表記統一
+  - expected: インスタンス
+    pattern: /(インタス?ンス|インスタス)/
+    prh: タイプミス可能性
+  - expected: サーバ
+    pattern: サバー
+    prh: タイプミス可能性
+  - expected: デプロイ
+    pattern: /(テプロイ|デロプイ|デブロイ)/
+    prh: タイプミス可能性
+  - expected: (
+    pattern: /（/
+    prh: カッコは半角統一
+  - expected: )
+    pattern: /）/
+    prh: カッコは半角統一
+  - expected: ":"
+    pattern: ：
+    prh: コロンは半角統一
+  - expected: " "
+    pattern: 　
+    prh: スペースは半角統一(全角スペース禁止)
+  - expected: アドオン
+    pattern: /(Addon|Add-on)/i
+    prh: カナ表現推奨単語
+  - expected: アグリゲーションレイヤー
+    pattern: /Aggregation Layer/i
+    prh: カナ表現推奨単語
+  - expected: アーキテクチャ
+    pattern: /architecture/i
+    prh: カナ表現推奨単語
+  - expected: バイナリ
+    pattern: /binary/i
+    prh: カナ表現推奨単語
+  - expected: クラスター
+    pattern: /cluster/i
+    prh: カナ表現推奨単語
+  - expected: コミュニティ
+    pattern: /community/i
+    prh: カナ表現推奨単語
+  - expected: コンテナ
+    pattern: /container/i
+    prh: カナ表現推奨単語
+  - expected: コントローラー
+    pattern: /controller/i
+    prh: カナ表現推奨単語
+  - expected: デプロイ
+    pattern: /(deployment|deploy)/
+    prh: カナ表現推奨単語。KubernetesリソースとしてのDeploymentはママ表記
+  - expected: ディレクトリ
+    pattern: /directory/i
+    prh: カナ表現推奨単語
+  - expected: さらなる情報
+    pattern: "For more information"
+    prh: 定型
+  - expected: GitHub
+    pattern: "ギットハブ"
+    prh: 英語表記
+  - expected: Issue
+    pattern: イシュー
+    prh: 英語表記
+  - expected: オペレーター
+    pattern: /operator/i
+    prh: カナ表現推奨単語
+  - expected: オーケストレーションする
+    pattern: /orchestrate/i
+    prh: カナ表現推奨単語
+  - expected: 永続ボリューム
+    pattern: /Persistent Volume/i
+    prh: カナ表現推奨単語。KubernetesリソースとしてのPersistent Volumeはママ表記
+  - expected: プレフィックス
+    pattern: prefix
+    prh: カナ表現推奨単語
+  - expected: Pull Request
+    pattern: プルリクエスト
+    prh: 英語表記
+  - expected: クォータ
+    pattern: /Quota/i
+    prh: カナ表現推奨単語
+  - expected: レジストリ
+    pattern: /registry/i
+    prh: カナ表現推奨単語
+  - expected: セキュア
+    pattern: /secure/i
+    prh: カナ表現推奨単語
+  - expected: の集合
+    pattern: a set of
+    prh: k8s表記ルール
+  - expected: 積層
+    pattern: stacked
+    prh: k8s表記ルール
+
