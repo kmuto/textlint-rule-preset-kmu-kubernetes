@@ -1,0 +1,22 @@
+Kubernetes
+balancer
+balance
+Pull Request
+Persistent Volume
+orchestration
+deployment
+architecture
+aggregation
+registry
+registration
+desired state
+Kubernetes Master
+namespace
+Transport Layer Security
+huge page
+kubectl
+StatefulSet
+Killercoda
+Play with Kubernetes
+minikube
+Docker

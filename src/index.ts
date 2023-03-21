@@ -62,7 +62,9 @@ module.exports = {
             "severity": "warning",
             "awsDic": false,
             "hatenaDic": false,
-            "googleDic": false
+            "googleDic": false,
+            "commonDic": false,
+            "userDic": [__dirname + "/../dict/term.txt"]
         }
     }
 };

@@ -76,5 +76,9 @@ describe("textlint-rule-preset-kmu-kubernetes", () => {
         testUnit("不適切なカナ化", "ギットハブにイシューを送ってプルリクエスト。", (_, message) => {
             assert.match(message, /英語表記/);
         });
+        testUnit("タイプミス", "lKubernetes, Kuberentes、Transport Layer Securitry", (messages, message) => {
+            assert.equal(messages.length, 3);
+            assert.match(message, /Kubernetes.+Kubernetes.+Security/);
+        });
     });
 });
